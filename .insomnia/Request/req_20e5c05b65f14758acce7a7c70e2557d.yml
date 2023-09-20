@@ -1,0 +1,26 @@
+_id: req_20e5c05b65f14758acce7a7c70e2557d
+type: Request
+parentId: fld_4f5f368cbdb541c4979cc47a8e275f95
+modified: 1694733734921
+created: 1694733728683
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/consumers"
+name: Delete a Consumer
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1694592122725.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

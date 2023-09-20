@@ -1,0 +1,26 @@
+_id: req_b682b777b97c4cca88510e60956d4180
+type: Request
+parentId: fld_4f5f368cbdb541c4979cc47a8e275f95
+modified: 1694733415002
+created: 1694732846727
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/consumers"
+name: List Consumers
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1694732841358
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

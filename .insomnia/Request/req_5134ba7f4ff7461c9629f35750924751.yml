@@ -1,0 +1,26 @@
+_id: req_5134ba7f4ff7461c9629f35750924751
+type: Request
+parentId: fld_0bf930b1a9e04a7a8b62e4d94ac6cafa
+modified: 1695233110762
+created: 1695233003110
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/services"
+name: Create Service
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1695233089681
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

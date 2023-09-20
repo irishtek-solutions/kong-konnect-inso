@@ -1,0 +1,26 @@
+_id: req_67b6f8e692a942079b0e80ea5a93bf0d
+type: Request
+parentId: fld_4f5f368cbdb541c4979cc47a8e275f95
+modified: 1694733741001
+created: 1694733719796
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/consumers"
+name: Update a Consumer
+description: ""
+method: PATCH
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1694612225387.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

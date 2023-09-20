@@ -1,0 +1,26 @@
+_id: req_91eb12a21c284319a876e2aa8c40cf95
+type: Request
+parentId: fld_de043044394c459fbefe15abfa0a06a3
+modified: 1695233102238
+created: 1695233040040
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/services"
+name: List Services
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1695233102205
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

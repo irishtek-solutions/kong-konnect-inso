@@ -1,0 +1,26 @@
+_id: req_3cea035e4ae14a5c90efc449cf672ddb
+type: Request
+parentId: fld_0bf930b1a9e04a7a8b62e4d94ac6cafa
+modified: 1695233112305
+created: 1695233023258
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/consumers"
+name: Create a Route
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1695233089631
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

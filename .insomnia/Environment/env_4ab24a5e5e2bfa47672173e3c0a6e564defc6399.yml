@@ -1,0 +1,14 @@
+_id: env_4ab24a5e5e2bfa47672173e3c0a6e564defc6399
+type: Environment
+parentId: wrk_fd15e4103d3646fda084a73ff8c127e0
+modified: 1694733314220
+created: 1694111837346
+name: Base Environment
+data:
+  kong_admin_url: "{{ scheme }}://{{konnect_admin_endpoint}}{{ base_path }}"
+dataPropertyOrder:
+  "&":
+    - kong_admin_url
+color: null
+isPrivate: false
+metaSortKey: 1694111837346

@@ -1,0 +1,26 @@
+_id: req_d43a7e411bf24cd2a4ef200a9def8153
+type: Request
+parentId: fld_6e07d4e656e7484d9e232b56059199c9
+modified: 1695233106464
+created: 1695233057265
+url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
+  }}/core-entities/routes"
+name: List Routes
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1695233106431
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
