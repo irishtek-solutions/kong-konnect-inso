@@ -1,0 +1,10 @@
+_id: fld_8e1f170db57249ad9efe1e10b13a25d7
+type: RequestGroup
+parentId: fld_bd3df183654640a8ae35d380cc798cbd
+modified: 1696965961107
+created: 1696965950833
+name: Basic Authentication
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1696963582517

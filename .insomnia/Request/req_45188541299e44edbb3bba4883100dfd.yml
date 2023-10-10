@@ -1,0 +1,39 @@
+_id: req_45188541299e44edbb3bba4883100dfd
+type: Request
+parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
+modified: 1696966785593
+created: 1696966647376
+url: "{{ _.base_url }}/core-entities/consumers/{% response 'body',
+  'req_445693c08aee42f1b10d9a20e5993072', 'b64::JC5pZA==::46b', 'never', 60
+  %}/basic-auth"
+name: Provision Consumer Credential
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"consumer": {
+    		"id": "{% response 'body', 'req_445693c08aee42f1b10d9a20e5993072', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"username": "paul",
+    	"password": "paul-pass",
+    	"tags": ["basic-auth-example"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964015029.9688
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

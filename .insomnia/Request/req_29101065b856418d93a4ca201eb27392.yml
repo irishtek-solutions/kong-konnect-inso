@@ -1,16 +1,25 @@
 _id: req_29101065b856418d93a4ca201eb27392
 type: Request
 parentId: fld_4f5f368cbdb541c4979cc47a8e275f95
-modified: 1694733710681
+modified: 1695246636487
 created: 1694733707169
 url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
   }}/core-entities/consumers"
 name: Create a Consumers
 description: ""
 method: POST
-body: {}
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "first-consumer",
+    	"tags": [],
+    	"custom_id": "first-consumer-id"
+    }
 parameters: []
 headers:
+  - name: Content-Type
+    value: application/json
   - id: pair_fe7f295050074234b5c29e57c375ccaa
     name: Authorization
     value: Bearer {{ _.konnect_access_token }}

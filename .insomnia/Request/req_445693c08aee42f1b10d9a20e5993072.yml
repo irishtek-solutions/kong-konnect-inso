@@ -1,0 +1,34 @@
+_id: req_445693c08aee42f1b10d9a20e5993072
+type: Request
+parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
+modified: 1696966609284
+created: 1696965950842
+url: "{{ _.base_url }}/core-entities/consumers"
+name: Create a Consumer
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "paul",
+    	"tags": ["basic-auth-example"],
+    	"custom_id": "paul-id"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964033922.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

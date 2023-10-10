@@ -1,9 +1,9 @@
 _id: env_99e51dff82a54b5490024bb745115eab
 type: Environment
 parentId: env_4ab24a5e5e2bfa47672173e3c0a6e564defc6399
-modified: 1695245103418
+modified: 1696963634813
 created: 1694111867912
-name: Test Environment
+name: Environment Template
 data:
   protocol: http://
   scheme: https://

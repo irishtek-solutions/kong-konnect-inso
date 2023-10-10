@@ -1,0 +1,23 @@
+_id: req_1cf9a07df3b04e8792e6e04a988c9900
+type: Request
+parentId: fld_1088ad227b4f40f6a7f7e65786213476
+modified: 1695250285698
+created: 1695250285698
+url: "{{ _.protocol }}{{ _.host }}/api"
+name: First Plugin
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1695241174005
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

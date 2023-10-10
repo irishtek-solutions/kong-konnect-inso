@@ -1,0 +1,47 @@
+_id: req_5fb425329a634b7a8cefef457563f960
+type: Request
+parentId: fld_40e7860df9da4135b6502b0aa76fe55f
+modified: 1696965207768
+created: 1696964392796
+url: "{{ _.base_url }}/core-entities/routes"
+name: Create a Route
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_cc70a5bc2ec6410b8da5ea3b54509942', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"name": "mockbin-route",
+    	"regex_priority": 0,
+    	"path_handling": "v0",
+    	"preserve_host": false,
+    	"https_redirect_status_code": 426,
+    	"protocols": [
+    		"http",
+    		"https"
+    	],
+    	"strip_path": true,
+    	"paths": [
+    		"/example-path"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964071708.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

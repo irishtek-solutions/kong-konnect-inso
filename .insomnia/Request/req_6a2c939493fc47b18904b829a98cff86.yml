@@ -1,0 +1,36 @@
+_id: req_6a2c939493fc47b18904b829a98cff86
+type: Request
+parentId: fld_40e7860df9da4135b6502b0aa76fe55f
+modified: 1696965913574
+created: 1696964424865
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"enabled": true,
+    	"name": "<plugin-name>",
+    	"service":{
+    		"id":"{% response 'body', 'req_d61e688bb6db45e9bb3335acf499c1b3', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696963996137.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
