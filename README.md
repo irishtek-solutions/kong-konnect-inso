@@ -4,7 +4,7 @@ Insomnia Collection for Kong Konnect Guides
 
 # Insomnia REST Collection for Kong Konnect
 
-![GitHub last commit](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Firishtek-solutions%2Fkong-konnect-inso)
+![GitHub last commit](https://img.shields.io/github/last-commit/irishtek-solutions/kong-konnect)
 
 This repository contains an Insomnia Collection designed to work seamlessly with the [Kong Konnect](https://github.com/irishtek-solutions/kong-konnect) Github repository, a powerful library of Konnect resources. With Insomnia's GitHub integration, you can clone this repository to have all the API requests readily available for your Kong Konnect integration.
 
