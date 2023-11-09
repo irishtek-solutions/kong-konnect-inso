@@ -1,0 +1,74 @@
+_id: req_96d626c71e6344819aae0b58b1fb9a67
+type: Request
+parentId: fld_6fd2fcb673c6464580f0d26766dd4c73
+modified: 1696978727989
+created: 1696978327338
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_8305e49bdcb2436c8e36d5377db0b059', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"tags": ["request-transformer-example"],
+    	"name": "request-transformer",
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"add": {
+    			"body": [],
+    			"headers": [
+    				"kong-header:jungle-header"
+    			],
+    			"querystring": [
+    				"kong-querystring:jungle-querystring"
+    			]
+    		},
+    		"append": {
+    			"body": [],
+    			"headers": [],
+    			"querystring": []
+    		},
+    		"remove": {
+    			"body": [],
+    			"headers": [],
+    			"querystring": []
+    		},
+    		"rename": {
+    			"body": [],
+    			"headers": [],
+    			"querystring": []
+    		},
+    		"replace": {
+    			"body": [],
+    			"headers": [],
+    			"querystring": []
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

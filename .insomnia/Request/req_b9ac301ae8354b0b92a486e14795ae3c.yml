@@ -1,0 +1,34 @@
+_id: req_b9ac301ae8354b0b92a486e14795ae3c
+type: Request
+parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
+modified: 1697240020261
+created: 1696977409279
+url: "{{ _.proxy }}/acl"
+name: Proxy Request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/8.2.0
+    id: pair_01b713c9734f4b2e92f21f995d94e6e3
+  - id: pair_7757b16d7e3242c7b0bb8142f4eb6adc
+    name: apikey
+    value: partner-key
+    description: ""
+    disabled: true
+  - id: pair_2135bf79475f4fe9b8ed76ea211df484
+    name: apikey
+    value: engineer-key
+    description: ""
+    disabled: false
+authentication: {}
+metaSortKey: -1696146829473.3438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

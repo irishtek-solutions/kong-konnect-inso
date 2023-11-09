@@ -1,0 +1,58 @@
+_id: req_5066c8ddc22043dfa6069f9ab61a1c46
+type: Request
+parentId: fld_b0772d9aa759420599349d31a70a0118
+modified: 1696974729617
+created: 1696974416475
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_5e17b8d436204ef2b00bde612a24051f', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"tags": ["rate-limiting-example"],
+    	"name": "rate-limiting",
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"error_code": 429,
+    		"error_message": "API rate limit exceeded",
+    		"fault_tolerant": true,
+    		"hide_client_headers": false,
+    		"limit_by": "consumer",
+    		"minute": 5,
+    		"policy": "local",
+    		"redis_database": 0,
+    		"redis_port": 6379,
+    		"redis_ssl": false,
+    		"redis_ssl_verify": false,
+    		"redis_timeout": 2000,
+    		"sync_rate": -1
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

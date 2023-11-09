@@ -1,8 +1,8 @@
-_id: req_c49f9eec53874862ac064fb8be299c83
+_id: req_b654f10945454fbfa1825bda98860aff
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973284802
-created: 1696965950835
+parentId: fld_a9de1ce040f44a9b81af27a2baf2ed3b
+modified: 1696979008759
+created: 1696978979725
 url: "{{ _.base_url }}/core-entities/routes"
 name: Create a Route
 description: ""
@@ -12,9 +12,9 @@ body:
   text: >-
     {
     	"service":{
-    		"id":"{% response 'body', 'req_dbe94f0183c44f6098c5d70d18b55c8e', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    		"id":"{% response 'body', 'req_734e568c957142c5b9d1c4c8f68d17b2', 'b64::JC5pZA==::46b', 'never', 60 %}"
     	},
-    	"name": "basic-auth-route",
+    	"name": "file-log-route",
     	"regex_priority": 0,
     	"path_handling": "v0",
     	"preserve_host": false,
@@ -24,9 +24,9 @@ body:
     		"https"
     	],
     	"strip_path": true,
-    	"tags": ["basic-auth-example"],
+    	"tags": ["file-log-example"],
     	"paths": [
-    		"/basic-auth"
+    		"/file-log"
     	]
     }
 parameters: []

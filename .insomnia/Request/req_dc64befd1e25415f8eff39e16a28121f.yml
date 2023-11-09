@@ -1,8 +1,8 @@
-_id: req_c49f9eec53874862ac064fb8be299c83
+_id: req_dc64befd1e25415f8eff39e16a28121f
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973284802
-created: 1696965950835
+parentId: fld_b0772d9aa759420599349d31a70a0118
+modified: 1696974592397
+created: 1696974416474
 url: "{{ _.base_url }}/core-entities/routes"
 name: Create a Route
 description: ""
@@ -12,9 +12,9 @@ body:
   text: >-
     {
     	"service":{
-    		"id":"{% response 'body', 'req_dbe94f0183c44f6098c5d70d18b55c8e', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    		"id":"{% response 'body', 'req_5e17b8d436204ef2b00bde612a24051f', 'b64::JC5pZA==::46b', 'never', 60 %}"
     	},
-    	"name": "basic-auth-route",
+    	"name": "rate-limiting-route",
     	"regex_priority": 0,
     	"path_handling": "v0",
     	"preserve_host": false,
@@ -24,9 +24,9 @@ body:
     		"https"
     	],
     	"strip_path": true,
-    	"tags": ["basic-auth-example"],
+    	"tags": ["rate-limiting-example"],
     	"paths": [
-    		"/basic-auth"
+    		"/rate-limiting"
     	]
     }
 parameters: []

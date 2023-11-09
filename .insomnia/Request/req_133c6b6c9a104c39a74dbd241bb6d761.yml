@@ -1,8 +1,8 @@
-_id: req_c49f9eec53874862ac064fb8be299c83
+_id: req_133c6b6c9a104c39a74dbd241bb6d761
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973284802
-created: 1696965950835
+parentId: fld_f5666fd4aa084dd89457e9945ed31353
+modified: 1696973372194
+created: 1696973142532
 url: "{{ _.base_url }}/core-entities/routes"
 name: Create a Route
 description: ""
@@ -12,9 +12,9 @@ body:
   text: >-
     {
     	"service":{
-    		"id":"{% response 'body', 'req_dbe94f0183c44f6098c5d70d18b55c8e', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    		"id":"{% response 'body', 'req_d19ba0282677432d9afe8cd7437b0e83', 'b64::JC5pZA==::46b', 'never', 60 %}"
     	},
-    	"name": "basic-auth-route",
+    	"name": "key-auth-route",
     	"regex_priority": 0,
     	"path_handling": "v0",
     	"preserve_host": false,
@@ -24,9 +24,9 @@ body:
     		"https"
     	],
     	"strip_path": true,
-    	"tags": ["basic-auth-example"],
+    	"tags": ["key-auth-example"],
     	"paths": [
-    		"/basic-auth"
+    		"/key-auth"
     	]
     }
 parameters: []

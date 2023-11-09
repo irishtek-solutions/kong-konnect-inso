@@ -1,21 +1,19 @@
-_id: req_45188541299e44edbb3bba4883100dfd
+_id: req_34cd982a494442ff8a2363950080c340
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973724170
-created: 1696966647376
-url: "{{ _.base_url }}/core-entities/consumers/{% response 'body',
-  'req_445693c08aee42f1b10d9a20e5993072', 'b64::JC5pZA==::46b', 'never', 60
-  %}/basic-auth"
-name: Provision Consumer Credential
+parentId: fld_f5666fd4aa084dd89457e9945ed31353
+modified: 1696973465924
+created: 1696973142537
+url: "{{ _.base_url }}/core-entities/consumers"
+name: Create a Consumer
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"username": "paul",
-    	"password": "paul-pass",
-    	"tags": ["basic-auth-example"]
+    	"username": "john",
+    	"tags": ["key-auth-example"],
+    	"custom_id": "john-id"
     }
 parameters: []
 headers:
@@ -26,7 +24,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.konnect_access_token }}"
-metaSortKey: -1696964015029.9688
+metaSortKey: -1696964033922.8125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,0 +1,42 @@
+_id: req_5a52932605a448ac8064d2f467eb73e4
+type: Request
+parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
+modified: 1696976571204
+created: 1696976129825
+url: "{{ _.base_url }}/core-entities/services"
+name: Create a Service
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": true,
+    	"name": "acl-service",
+    	"url": "https://mockbin.org/requests",
+    	"retries": 5,
+    	"connect_timeout": 60000,
+    	"write_timeout": 60000,
+    	"read_timeout": 60000,
+    	"client_certificate": null,
+    	"ca_certificates": [],
+    	"tags": ["acl-example"],
+    	"tls_verify": null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964222851.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,8 +1,8 @@
-_id: req_c49f9eec53874862ac064fb8be299c83
+_id: req_95b0d388bd684ce984d8ff225ba79afc
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973284802
-created: 1696965950835
+parentId: fld_d22a3171679348eca4bd16ee271844e9
+modified: 1696975268768
+created: 1696975219672
 url: "{{ _.base_url }}/core-entities/routes"
 name: Create a Route
 description: ""
@@ -12,9 +12,9 @@ body:
   text: >-
     {
     	"service":{
-    		"id":"{% response 'body', 'req_dbe94f0183c44f6098c5d70d18b55c8e', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    		"id":"{% response 'body', 'req_b403480410674ca5ba8bb67f6d71e688', 'b64::JC5pZA==::46b', 'never', 60 %}"
     	},
-    	"name": "basic-auth-route",
+    	"name": "canary-route",
     	"regex_priority": 0,
     	"path_handling": "v0",
     	"preserve_host": false,
@@ -24,9 +24,9 @@ body:
     		"https"
     	],
     	"strip_path": true,
-    	"tags": ["basic-auth-example"],
+    	"tags": ["canary-example"],
     	"paths": [
-    		"/basic-auth"
+    		"/canary"
     	]
     }
 parameters: []

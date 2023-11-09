@@ -1,0 +1,55 @@
+_id: req_5ac535e558224190a63b8bca5e46b087
+type: Request
+parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
+modified: 1696976789559
+created: 1696976129824
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Key-Auth Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_5a52932605a448ac8064d2f467eb73e4', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"name": "key-auth",
+    	"tags": ["acl-example"],
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https",
+    		"ws",
+    		"wss"
+    	],
+    	"config": {
+    		"hide_credentials": false,
+    		"key_in_body": false,
+    		"key_in_header": true,
+    		"key_in_query": true,
+    		"key_names": [
+    			"apikey"
+    		],
+    		"run_on_preflight": true
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

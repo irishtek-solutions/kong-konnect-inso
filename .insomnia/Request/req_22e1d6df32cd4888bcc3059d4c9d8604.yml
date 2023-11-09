@@ -1,0 +1,54 @@
+_id: req_22e1d6df32cd4888bcc3059d4c9d8604
+type: Request
+parentId: fld_d22a3171679348eca4bd16ee271844e9
+modified: 1696975936728
+created: 1696975219676
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_b403480410674ca5ba8bb67f6d71e688', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"name": "canary",
+    	"tags": ["canary-example"],
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"duration": 3600,
+    		"hash": "none",
+
+    		"percentage": 50,
+    		"steps": 100,
+    		"upstream_fallback": false,
+    		"upstream_host": "httpbin.org",
+    		"upstream_port": 443,
+    		"upstream_uri": "/anything"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

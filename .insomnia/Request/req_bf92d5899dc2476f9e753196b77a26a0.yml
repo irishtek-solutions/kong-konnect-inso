@@ -1,21 +1,20 @@
-_id: req_45188541299e44edbb3bba4883100dfd
+_id: req_bf92d5899dc2476f9e753196b77a26a0
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973724170
-created: 1696966647376
+parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
+modified: 1696976953857
+created: 1696976944515
 url: "{{ _.base_url }}/core-entities/consumers/{% response 'body',
-  'req_445693c08aee42f1b10d9a20e5993072', 'b64::JC5pZA==::46b', 'never', 60
-  %}/basic-auth"
-name: Provision Consumer Credential
+  'req_0ce79dbf2d96492688779731f93849c9', 'b64::JC5pZA==::46b', 'never', 60
+  %}/key-auth"
+name: Provision Partner Credential
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"username": "paul",
-    	"password": "paul-pass",
-    	"tags": ["basic-auth-example"]
+    	"key": "partner-key",
+    	"tags": ["acl-example"]
     }
 parameters: []
 headers:
@@ -26,7 +25,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.konnect_access_token }}"
-metaSortKey: -1696964015029.9688
+metaSortKey: -1696964005583.5469
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
