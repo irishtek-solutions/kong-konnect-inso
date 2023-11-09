@@ -1,0 +1,42 @@
+_id: req_5e17b8d436204ef2b00bde612a24051f
+type: Request
+parentId: fld_b0772d9aa759420599349d31a70a0118
+modified: 1696974504204
+created: 1696974416477
+url: "{{ _.base_url }}/core-entities/services"
+name: Create a Service
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": true,
+    	"name": "rate-limiting-service",
+    	"url": "https://mockbin.org/requests",
+    	"retries": 5,
+    	"connect_timeout": 60000,
+    	"write_timeout": 60000,
+    	"read_timeout": 60000,
+    	"client_certificate": null,
+    	"ca_certificates": [],
+    	"tags": ["rate-limiting-example"],
+    	"tls_verify": null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964222851.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

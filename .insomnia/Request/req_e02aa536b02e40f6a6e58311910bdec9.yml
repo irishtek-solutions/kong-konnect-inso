@@ -1,9 +1,9 @@
-_id: req_decab29b0caf48c29a137c41cc645a4d
+_id: req_e02aa536b02e40f6a6e58311910bdec9
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1697233330741
-created: 1696966814992
-url: "{{ _.proxy }}/basic-auth"
+parentId: fld_3b8e37bad40b44a98d2f872a1601bba7
+modified: 1696978865944
+created: 1696978822119
+url: "{{ _.proxy }}/http-log"
 name: Proxy Request
 description: ""
 method: GET
@@ -12,13 +12,8 @@ parameters: []
 headers:
   - name: User-Agent
     value: insomnia/8.2.0
-authentication:
-  type: basic
-  useISO88591: false
-  disabled: false
-  username: paul
-  password: paul-pass
-metaSortKey: -1696963807208.6875
+authentication: {}
+metaSortKey: -1696964057538.8672
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

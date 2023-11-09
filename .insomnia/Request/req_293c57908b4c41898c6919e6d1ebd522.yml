@@ -1,0 +1,53 @@
+_id: req_293c57908b4c41898c6919e6d1ebd522
+type: Request
+parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
+modified: 1696977441536
+created: 1696977203969
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding ACL Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_5a52932605a448ac8064d2f467eb73e4', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"tags": ["acl-example"],
+    	"enabled": true,
+    	"name": "acl",
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"allow": [
+    			"internal-group"
+    		],
+    		"hide_groups_header": false
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+  - id: pair_34150d9e4b834c0a9015926f92ec8197
+    name: ""
+    value: ""
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696146829573.3438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,63 @@
+_id: req_cfdbc649940b47ce8a4fe44162a4578d
+type: Request
+parentId: fld_3b8e37bad40b44a98d2f872a1601bba7
+modified: 1696978961966
+created: 1696978822116
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service": {
+    		"id": "{% response 'body', 'req_476dd874dbe14fb199ec692807a06d34', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"tags": [
+    		"http-log-example"
+    	],
+    	"enabled": true,
+    	"name": "http-log",
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"content_type": "application/json",
+    		"headers": {
+    			"api-key": "apikey"
+    		},
+    		"http_endpoint": "http://example.com/logging-endpoint",
+    		"keepalive": 60000,
+    		"method": "POST",
+    		"queue": {
+    			"initial_retry_delay": 0.01,
+    			"max_batch_size": 1,
+    			"max_coalescing_delay": 1,
+    			"max_entries": 10000,
+    			"max_retry_delay": 60,
+    			"max_retry_time": 60
+    		},
+    		"timeout": 10000
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

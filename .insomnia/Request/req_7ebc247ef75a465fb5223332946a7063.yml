@@ -1,0 +1,52 @@
+_id: req_7ebc247ef75a465fb5223332946a7063
+type: Request
+parentId: fld_cd76893b86c546fcace0c70375f4059b
+modified: 1696979652400
+created: 1696973884340
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_e6c53ba7054d48c8a7eecffe950236b2', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"name": "ip-restriction",
+    	"tags": ["ip-restriction-example"],
+    	"protocols": [
+    		"http",
+    		"https",
+    		"tcp",
+    		"tls",
+    		"grpc",
+    		"grpcs"
+    	],
+    	"config": {
+    		"deny": [
+    			"172.17.0.1"
+    		],
+    		"message": "You are denied",
+    		"status": 500
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,49 @@
+_id: req_2f034f51f849458685c9c84cc984c1b7
+type: Request
+parentId: fld_d6ec480fcc5947278afeaece43fd90c0
+modified: 1696980265929
+created: 1696977885524
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_e529827df700491b969cd28792d40ddb', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"name": "correlation-id",
+    	"tags":["correlation-id-example"],
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"echo_downstream": true,
+    		"generator": "uuid#counter",
+    		"header_name": "Kong-Request-ID"
+
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

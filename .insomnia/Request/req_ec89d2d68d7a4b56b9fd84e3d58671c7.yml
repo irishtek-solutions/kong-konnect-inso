@@ -1,11 +1,11 @@
-_id: req_45188541299e44edbb3bba4883100dfd
+_id: req_ec89d2d68d7a4b56b9fd84e3d58671c7
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696973724170
-created: 1696966647376
+parentId: fld_f5666fd4aa084dd89457e9945ed31353
+modified: 1696973732398
+created: 1696973142539
 url: "{{ _.base_url }}/core-entities/consumers/{% response 'body',
-  'req_445693c08aee42f1b10d9a20e5993072', 'b64::JC5pZA==::46b', 'never', 60
-  %}/basic-auth"
+  'req_34cd982a494442ff8a2363950080c340', 'b64::JC5pZA==::46b', 'never', 60
+  %}/key-auth"
 name: Provision Consumer Credential
 description: ""
 method: POST
@@ -13,9 +13,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"username": "paul",
-    	"password": "paul-pass",
-    	"tags": ["basic-auth-example"]
+    	"tags": ["key-auth-example"],
+    	"key": "john-key"
     }
 parameters: []
 headers:

@@ -1,0 +1,52 @@
+_id: req_3e187eebb68647d3817358bdb7cc0b6a
+type: Request
+parentId: fld_04f609e582ae4b33b887b44476a905de
+modified: 1696977676305
+created: 1696977553720
+url: "{{ _.base_url }}/core-entities/plugins"
+name: Adding Plugin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"service":{
+    		"id":"{% response 'body', 'req_9d99180ffb354d7eba9f853effd31544', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	},
+    	"enabled": true,
+    	"name": "prometheus",
+    	"tags": [
+    		"prometheus-example"
+    	],
+    	"protocols": [
+    		"grpc",
+    		"grpcs",
+    		"http",
+    		"https"
+    	],
+    	"config": {
+    		"bandwidth_metrics": true,
+    		"latency_metrics": true,
+    		"per_consumer": true,
+    		"status_code_metrics": true,
+    		"upstream_health_metrics": true
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/8.2.0
+authentication:
+  type: bearer
+  token: "{{ _.konnect_access_token }}"
+metaSortKey: -1696964043369.2344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
