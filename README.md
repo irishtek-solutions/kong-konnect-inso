@@ -6,7 +6,7 @@ Insomnia Collection for Kong Konnect Guides and Material
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/irishtek-solutions/kong-konnect-inso)
 
-This repository contains an Insomnia Collection designed to work seamlessly with the [Kong Konnect](https://github.com/irishtek-solutions/kong-konnect) Github repository, a powerful library of Konnect resources. With Insomnia's GitHub integration, you can clone this repository to have all the API requests readily available for your Kong Konnect integrations.
+This repository contains an Insomnia Collection designed to work seamlessly with the [Kong Konnect Material & Guide](https://github.com/irishtek-solutions/kong-konnect) Github repository, a powerful library of Konnect resources. With Insomnia's GitHub integration, you can clone this repository to have all the API requests readily available for your Kong Konnect integrations.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ To get started with this Insomnia REST collection for Kong Konnect, follow these
 
 3. If you haven't authenticated with github already please do so. Copy this repository in the `Github URI` section like below:
 
-![Github integration](./images/git-int.png)
+![GitHub integration](./images/git-int.png)
 
 4. This will clone the resources and you should now see a list of folders filled with requests:
 
@@ -52,8 +52,8 @@ You can customize these requests to fit your specific use case. Be sure to provi
 
 ![Private Environment](./images/private-environment.png)
 
-3. Copy the json in the `Environment Template` section and paste into the private environment
-4. The two most important settings to configure would be the `proxy` endpoint as this is the endpoint we will use to test Kong. In my example its `http://localhost:8000` as this is the default http endpoint for the proxy. This could be the loadbalancer address of the proxy also. The other is `konnect_access_token`, this is the Personal access token or System Access token which should be obtained from Konnect. 
+3. Copy the JSON in the `Environment Template` section and paste into the private environment
+4. The two most important settings to configure would be the `proxy` endpoint as this is the endpoint we will use to test Kong. In my example, it's `http://localhost:8000` as this is the default HTTP endpoint for the proxy. This could be the load-balancer address of the proxy also. The other is `konnect_access_token`, this is the Personal access token or System Access token which should be obtained from Konnect. 
 
 ![Private environment Example](./images/private-environment-with-ex.png)
 
