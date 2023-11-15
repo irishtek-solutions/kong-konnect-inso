@@ -1,7 +1,7 @@
 _id: req_e6c53ba7054d48c8a7eecffe950236b2
 type: Request
 parentId: fld_cd76893b86c546fcace0c70375f4059b
-modified: 1696973996273
+modified: 1700016001705
 created: 1696973884346
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -12,8 +12,8 @@ body:
   text: |-
     {
     	"enabled": true,
-    	"name": "ip-restriction-mockbin-service",
-    	"url": "https://mockbin.org/requests",
+    	"name": "ip-restriction-httpbin-service",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

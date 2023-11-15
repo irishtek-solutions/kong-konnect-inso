@@ -1,7 +1,7 @@
 _id: req_9d99180ffb354d7eba9f853effd31544
 type: Request
 parentId: fld_04f609e582ae4b33b887b44476a905de
-modified: 1696977589686
+modified: 1700016065605
 created: 1696977553721
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "prometheus-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

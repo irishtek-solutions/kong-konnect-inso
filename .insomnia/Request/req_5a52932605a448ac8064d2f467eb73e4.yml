@@ -1,7 +1,7 @@
 _id: req_5a52932605a448ac8064d2f467eb73e4
 type: Request
 parentId: fld_ac9528dd388d4dbeb1d3ab5ffca600df
-modified: 1696976571204
+modified: 1700016043567
 created: 1696976129825
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "acl-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

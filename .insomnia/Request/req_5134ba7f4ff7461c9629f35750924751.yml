@@ -1,16 +1,33 @@
 _id: req_5134ba7f4ff7461c9629f35750924751
 type: Request
 parentId: fld_0bf930b1a9e04a7a8b62e4d94ac6cafa
-modified: 1695233110762
+modified: 1700016182639
 created: 1695233003110
 url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
   }}/core-entities/services"
 name: Create Service
 description: ""
 method: POST
-body: {}
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": true,
+    	"name": "http-log-service",
+    	"url": "https://httpbin.org/anything",
+    	"retries": 5,
+    	"connect_timeout": 60000,
+    	"write_timeout": 60000,
+    	"read_timeout": 60000,
+    	"client_certificate": null,
+    	"ca_certificates": [],
+    	"tags": ["http-log-example"],
+    	"tls_verify": null
+    }
 parameters: []
 headers:
+  - name: Content-Type
+    value: application/json
   - id: pair_fe7f295050074234b5c29e57c375ccaa
     name: Authorization
     value: Bearer {{ _.konnect_access_token }}
