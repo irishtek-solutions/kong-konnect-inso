@@ -1,7 +1,7 @@
 _id: req_dbe94f0183c44f6098c5d70d18b55c8e
 type: Request
 parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1696966027576
+modified: 1700015960866
 created: 1696965950841
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -12,8 +12,8 @@ body:
   text: |-
     {
     	"enabled": true,
-    	"name": "basic-auth-mockbin-service",
-    	"url": "https://mockbin.org/requests",
+    	"name": "basic-auth-httpbin-service",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

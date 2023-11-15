@@ -1,7 +1,7 @@
 _id: req_b403480410674ca5ba8bb67f6d71e688
 type: Request
 parentId: fld_d22a3171679348eca4bd16ee271844e9
-modified: 1696975241466
+modified: 1700016058456
 created: 1696975219678
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "canary-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,
