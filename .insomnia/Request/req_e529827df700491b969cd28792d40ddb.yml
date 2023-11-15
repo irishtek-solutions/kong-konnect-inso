@@ -1,7 +1,7 @@
 _id: req_e529827df700491b969cd28792d40ddb
 type: Request
 parentId: fld_d6ec480fcc5947278afeaece43fd90c0
-modified: 1696977907056
+modified: 1700016116748
 created: 1696977885526
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "correlation-id-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

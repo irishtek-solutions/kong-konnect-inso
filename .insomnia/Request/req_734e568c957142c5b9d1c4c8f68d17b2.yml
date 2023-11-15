@@ -1,7 +1,7 @@
 _id: req_734e568c957142c5b9d1c4c8f68d17b2
 type: Request
 parentId: fld_a9de1ce040f44a9b81af27a2baf2ed3b
-modified: 1696978989999
+modified: 1700016144560
 created: 1696978979728
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "file-log-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

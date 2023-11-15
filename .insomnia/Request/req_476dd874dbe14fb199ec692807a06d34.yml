@@ -1,7 +1,7 @@
 _id: req_476dd874dbe14fb199ec692807a06d34
 type: Request
 parentId: fld_3b8e37bad40b44a98d2f872a1601bba7
-modified: 1696978838499
+modified: 1700016137403
 created: 1696978822117
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "http-log-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,

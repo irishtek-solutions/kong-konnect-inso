@@ -1,7 +1,7 @@
 _id: req_8305e49bdcb2436c8e36d5377db0b059
 type: Request
 parentId: fld_6fd2fcb673c6464580f0d26766dd4c73
-modified: 1696978350978
+modified: 1700016124650
 created: 1696978327340
 url: "{{ _.base_url }}/core-entities/services"
 name: Create a Service
@@ -13,7 +13,7 @@ body:
     {
     	"enabled": true,
     	"name": "request-transformer-service",
-    	"url": "https://mockbin.org/requests",
+    	"url": "https://httpbin.org/anything",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,
