@@ -1,12 +1,12 @@
 # Kong Insomnia Collection
 
-Insomnia Collection for Kong Konnect Guides and Material
+Insomnia Collection for [Kong Konnect Kickstart Project](https://github.com/irishtek-solutions/kong-konnect)
 
 # Insomnia REST Collection for Kong Konnect
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/irishtek-solutions/kong-konnect-inso)
 
-This repository contains an Insomnia Collection designed to work seamlessly with the [Kong Konnect Material & Guide](https://github.com/irishtek-solutions/kong-konnect) Github repository, a powerful library of Konnect resources. With Insomnia's GitHub integration, you can clone this repository to have all the API requests readily available for your Kong Konnect integrations.
+This repository contains an Insomnia Collection designed to work seamlessly with the [Kong Konnect Kickstart Project](https://github.com/irishtek-solutions/kong-konnect) Github repository, a powerful library of Konnect resources. With Insomnia's GitHub integration, you can clone this repository to have all the API requests readily available for your Kong Konnect integrations.
 
 ## Table of Contents
 
@@ -16,7 +16,6 @@ This repository contains an Insomnia Collection designed to work seamlessly with
   - [Getting Started](#getting-started)
   - [How to Use the Collection](#how-to-use-the-collection)
     - [Setting Environment variables](#setting-environment-variables)
-    - [Video of using this Repository](#video-of-using-this-repository)
   - [Contributing](#contributing)
 
 ## Getting Started
@@ -28,7 +27,7 @@ To get started with this Insomnia REST collection for Kong Konnect, follow these
 
 ![Insomnia](./images/insomnia.png)
 
-3. If you haven't authenticated with github already please do so. Copy this repository in the `Github URI` section like below:
+3. If you haven't authenticated with Github already please do so. Copy this repository in the `Github URI` section like below:
 
 ![GitHub integration](./images/git-int.png)
 
@@ -56,12 +55,6 @@ You can customize these requests to fit your specific use case. Be sure to provi
 4. The two most important settings to configure would be the `proxy` endpoint as this is the endpoint we will use to test Kong. In my example, it's `http://localhost:8000` as this is the default HTTP endpoint for the proxy. This could be the load-balancer address of the proxy also. The other is `konnect_access_token`, this is the Personal access token or System Access token which should be obtained from Konnect. 
 
 ![Private environment Example](./images/private-environment-with-ex.png)
-
-### Video of using this Repository
-
-<!--
-Video
--->
 
 ## Contributing
 
