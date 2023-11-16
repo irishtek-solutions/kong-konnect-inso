@@ -1,7 +1,7 @@
 _id: req_d01db65a48774194ba1d2d8279d2fa71
 type: Request
 parentId: fld_f5666fd4aa084dd89457e9945ed31353
-modified: 1697234246490
+modified: 1700072717273
 created: 1696973142540
 url: "{{ _.proxy }}/key-auth"
 name: Proxy Request
@@ -14,7 +14,7 @@ headers:
     value: insomnia/8.2.0
 authentication:
   type: apikey
-  disabled: true
+  disabled: false
   key: apikey
   value: john-key
   addTo: header

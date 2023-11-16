@@ -1,20 +1,24 @@
-_id: req_29101065b856418d93a4ca201eb27392
+_id: req_519e7cc14d494c0ba8fda2954eb862b9
 type: Request
-parentId: fld_4f5f368cbdb541c4979cc47a8e275f95
-modified: 1700086419512
-created: 1694733707169
-url: "{{ _.scheme }}{{ _.konnect_admin_endpoint }}{{ _.base_path
-  }}/core-entities/consumers"
-name: Create a Consumers
+parentId: fld_26da05b55cb642c2a75cd4c327d6aeb8
+modified: 1700088557008
+created: 1700088058024
+url: "{{ _.base_url }}/core-entities/upstreams"
+name: Create Upstream
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"username": "first-consumer",
-    	"tags": [],
-    	"custom_id": "first-consumer-id"
+    	"name": "upstream-example",
+    	"slots": 10000,
+    	"algorithm": "round-robin",
+    	"hash_on": "none",
+    	"hash_fallback": "none",
+    	"healthchecks": {
+    		"threshold": 0
+    	}
     }
 parameters: []
 headers:
@@ -25,7 +29,7 @@ headers:
     value: Bearer {{ _.konnect_access_token }}
     description: ""
 authentication: {}
-metaSortKey: -1694652430711
+metaSortKey: -1700088034408
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

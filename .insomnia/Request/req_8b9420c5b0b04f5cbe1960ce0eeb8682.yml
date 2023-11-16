@@ -1,0 +1,39 @@
+_id: req_8b9420c5b0b04f5cbe1960ce0eeb8682
+type: Request
+parentId: fld_26da05b55cb642c2a75cd4c327d6aeb8
+modified: 1700089031801
+created: 1700088940713
+url: "{{ _.v1_Konnect_admin_endpoint }}/upstreams/{% response 'body',
+  'req_519e7cc14d494c0ba8fda2954eb862b9', 'b64::JC5pZA==::46b', 'never', 60
+  %}/targets"
+name: Create target (httpbin.org)
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"target": "httpbin.org:80",
+    	"weight": 100,
+    	"tags": [],
+    	"upstream": {
+    		"id": "{% response 'body', 'req_519e7cc14d494c0ba8fda2954eb862b9', 'b64::JC5pZA==::46b', 'never', 60 %}"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1699912470034.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

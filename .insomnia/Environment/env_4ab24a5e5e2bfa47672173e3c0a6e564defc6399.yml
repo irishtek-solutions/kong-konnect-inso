@@ -1,11 +1,11 @@
 _id: env_4ab24a5e5e2bfa47672173e3c0a6e564defc6399
 type: Environment
 parentId: wrk_fd15e4103d3646fda084a73ff8c127e0
-modified: 1696964807888
+modified: 1700088378001
 created: 1694111837346
 name: Base Environment
 data:
-  base_url: "{{ scheme }}://{{ host}}{{ base_path }}"
+  base_url: "{{ scheme }}{{konnect_admin_endpoint}}{{ base_path }}"
 dataPropertyOrder:
   "&":
     - base_url

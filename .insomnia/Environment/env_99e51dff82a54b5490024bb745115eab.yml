@@ -1,17 +1,18 @@
 _id: env_99e51dff82a54b5490024bb745115eab
 type: Environment
 parentId: env_4ab24a5e5e2bfa47672173e3c0a6e564defc6399
-modified: 1696963634813
+modified: 1700088884415
 created: 1694111867912
 name: Environment Template
 data:
   protocol: http://
   scheme: https://
-  host: ""
+  host: us.api.konghq.com
   konnect_admin_endpoint: us.api.konghq.com
   base_path: /v2/runtime-groups/<runtime-group-id>
   proxy: ""
   konnect_access_token: ""
+  v1_Konnect_admin_endpoint: https://us.api.konghq.com/konnect-api/api/runtime_groups/<runtime-group-id>
 dataPropertyOrder:
   "&":
     - protocol
@@ -21,6 +22,7 @@ dataPropertyOrder:
     - base_path
     - proxy
     - konnect_access_token
+    - v1_Konnect_admin_endpoint
 color: null
 isPrivate: false
 metaSortKey: 1694111867912

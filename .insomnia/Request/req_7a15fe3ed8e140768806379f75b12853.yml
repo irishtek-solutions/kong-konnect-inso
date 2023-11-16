@@ -1,10 +1,10 @@
-_id: req_dbe94f0183c44f6098c5d70d18b55c8e
+_id: req_7a15fe3ed8e140768806379f75b12853
 type: Request
-parentId: fld_8e1f170db57249ad9efe1e10b13a25d7
-modified: 1700088394279
-created: 1696965950841
+parentId: fld_26da05b55cb642c2a75cd4c327d6aeb8
+modified: 1700089139093
+created: 1700088018015
 url: "{{ _.base_url }}/core-entities/services"
-name: Create a Service
+name: Create Service (Upstream)
 description: ""
 method: POST
 body:
@@ -12,27 +12,27 @@ body:
   text: |-
     {
     	"enabled": true,
-    	"name": "basic-auth-httpbin-service",
-    	"url": "https://httpbin.org/anything",
+    	"name": "Upstream-Example",
+    	"url": "http://upstream-example",
     	"retries": 5,
     	"connect_timeout": 60000,
     	"write_timeout": 60000,
     	"read_timeout": 60000,
     	"client_certificate": null,
     	"ca_certificates": [],
-    	"tags": ["basic-auth-example"],
+    	"tags": ["first-upstream-example"],
     	"tls_verify": null
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-  - name: User-Agent
-    value: insomnia/8.2.0
-authentication:
-  type: bearer
-  token: "{{ _.konnect_access_token }}"
-metaSortKey: -1696964222851.25
+  - id: pair_fe7f295050074234b5c29e57c375ccaa
+    name: Authorization
+    value: Bearer {{ _.konnect_access_token }}
+    description: ""
+authentication: {}
+metaSortKey: -1700088034458
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
